@@ -1,0 +1,9 @@
+# dependencies
+node_modules
+
+# IDE/text editors
+.vscode
+.idea
+
+# Credentials
+.env

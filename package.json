@@ -1,0 +1,35 @@
+{
+  "name": "pinql",
+  "version": "1.0.0",
+  "description": "Pinboard using GraphQL",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridharrajs/pinql.git"
+  },
+  "author": "sridharrajs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sridharrajs/pinql/issues"
+  },
+  "homepage": "https://github.com/sridharrajs/pinql#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.0",
+    "apollo-server-express": "^2.19.0",
+    "axios": "^0.27.2",
+    "chalk": "^4.1.0",
+    "express": "^4.17.1",
+    "graphql": "^15.4.0",
+    "graphql-resolvers": "^0.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "keywords": [
+    "pinboard",
+    "GraphQL"
+  ]
+}
