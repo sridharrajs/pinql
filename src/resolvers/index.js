@@ -16,6 +16,29 @@ const resolvers = {
       return posts
     }
   },
+  Mutation: {
+    addBookmark: async (parent, args, context) => {
+      const { pinboardToken } = context
+      const { title, url } = args
+
+      const queryParams = [
+        'format=json',
+        `auth_token=${pinboardToken}`,
+        `url=${url}`,
+        `description=${title}`,
+      ];
+      const response = await axios({
+        method: 'POST',
+        url: `https://api.pinboard.in/v1/posts/add?${queryParams.join('&')}`,
+        headers: {
+          'Accept-Encoding': 'application/json'
+        }
+      })
+      return {
+        resultCode: response.data.result_code
+      }
+    }
+  }
 }
 
 module.exports = { resolvers }

@@ -15,6 +15,14 @@ const typeDefs = gql`
     toread: String
     tags: String
   }
+  
+  type Mutation {
+    addBookmark(title: String!, url: String!): ResponseCode
+  }
+  
+  type ResponseCode {
+    resultCode: String
+  }
 `
 
 module.exports = { typeDefs }
