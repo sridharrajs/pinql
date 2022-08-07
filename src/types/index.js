@@ -17,7 +17,9 @@ const typeDefs = gql`
   }
   
   type Mutation {
-    addBookmark(title: String!, url: String!): ResponseCode
+    addBookmark(url: String!, title: String!): ResponseCode
+    updateBookmark(url:String!, title: String!): ResponseCode
+    deleteBookmark(url: String!): ResponseCode
   }
   
   type ResponseCode {
