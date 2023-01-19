@@ -1,6 +1,6 @@
 const http = require('http')
 
-const { app } = require('../src')
+const { app } = require('../server/src')
 const PORT = 9000
 
 const start = () => new Promise((resolve, reject) => {
