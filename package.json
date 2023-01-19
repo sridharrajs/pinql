@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Pinboard using GraphQL",
   "scripts": {
-    "start": "node .",
-    "dev1": "nodemon .",
-    "dev": "concurrently 'nodemon .' 'cd clients/reactui/ && npm start' -n 'server,client' -c 'auto'"
+    "start": "concurrently 'nodemon .' 'cd clients/reactui/ && npm start' -n 'server,client' -c 'auto'"
   },
   "repository": {
     "type": "git",
